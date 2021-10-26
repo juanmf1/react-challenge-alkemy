@@ -175,7 +175,7 @@ html {
       rgba(15, 15, 15, 0.911),
       rgba(0, 0, 0, 0.596)
     ),
-    url("https://m.media-amazon.com/images/I/91ejhAAeUmL._AC_SY355_.jpg");
+    url("./images/back-results.jpg");
   background-position: center;
   min-height: 80vh;
   color: #fff;
@@ -188,7 +188,7 @@ html {
       rgba(15, 15, 15, 0.794),
       rgba(0, 0, 0, 0.596)
     ),
-    url("https://static.thcdn.com/images/large/webp//productimg/1600/1600/12840960-2064831945592667.jpg");
+    url("./images/back-team.webp");
   background-position: center;
   min-height: 80vh;
   font-family: "Source Sans Pro", sans-serif;
