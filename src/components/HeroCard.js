@@ -72,7 +72,6 @@ const HeroCard = ({ id, mode }) => {
   }, [heroes]);
 
   
-
   if (intelligence==="null"){
     setIntelligence(0)
   }

@@ -22,7 +22,7 @@ const Team = () => {
 
   return (
     <>
-      <Container fluid className="team-container d-flex flex-column ">
+      <Container fluid className="team-container d-flex flex-column pt-3 ">
         <div className="d-flex justify-content-center flex-wrap pt-4">
           {heroes.length === 0 ? (
             <>
