@@ -213,13 +213,15 @@ html {
   background-color: var(--backgrounds);
   border-radius: 15px;
   font-size: 1.2rem;
+  font-weight:bolder;
+}
+
+.team-stats-col div p span{
+  color: var(--fonts-card)
 }
 
 .team-stats-box {
   box-shadow: 3px 3px 10px #333;
-}
-.team-stats-col div p span {
-  font-weight: bolder;
 }
 
 /* Styles details modal */

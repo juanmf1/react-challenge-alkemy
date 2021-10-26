@@ -71,6 +71,25 @@ const HeroCard = ({ id, mode }) => {
       });
   }, [heroes]);
 
+  
+
+  if (intelligence==="null"){
+    setIntelligence(0)
+  }
+  if (strength==="null"){
+    setStrength(0)
+  }
+  if(durability==="null"){
+    setDurability(0)
+  }
+  if(combat==="null"){
+    setCombat(0)
+  }
+  if(speed==="null"){
+    setSpeed(0)
+  }
+
+  
   // Efecto para saber si el heroe esta en el equipo
 
   useEffect(() => {

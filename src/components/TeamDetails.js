@@ -15,6 +15,21 @@ const TeamDetails = ({ averageWeight, averageHeight }) => {
   const { heroes } = useTeam();
   const { powerStatsCount } = useTeam();
 
+  let statsValues = [];
+
+  for (let stat in powerStatsCount) {
+    statsValues.push(powerStatsCount[stat]);
+  }
+
+  let maxStatValue = Math.max(...statsValues);
+
+  let maxStat;
+
+  for (let stat in powerStatsCount) {
+    if (powerStatsCount[stat] === maxStatValue) {
+      maxStat = stat;
+    }
+  }
 
   return (
     <>
@@ -22,18 +37,24 @@ const TeamDetails = ({ averageWeight, averageHeight }) => {
         <Container fluid className="team-stats-container">
           <Row>
             <Col className="team-stats-col d-flex flex-column align-items-center m-2 p-2">
-              <h3 className="h2"><u>Your Team</u></h3>
+              <h3 className="h2">
+                <u>Your Team</u>
+              </h3>
               <div className="p-2 m-2 team-stats-box">
+                <p><span>Team type:</span> {maxStat.charAt(0).toUpperCase()}
+              {maxStat.slice(1)} </p>
                 <p>
-                  Average weight: <span>{averageWeight.toFixed(1)} kg</span>
+                  <span>Average weight:</span> {averageWeight.toFixed(1)} kg
                 </p>
                 <p>
-                  Average height: <span>{averageHeight.toFixed(1)} cm</span>
+                  <span>Average height:</span> {averageHeight.toFixed(1)} cm
                 </p>
               </div>
             </Col>
             <Col className="team-stats-col d-flex flex-column align-items-center m-2">
-              <h3 className="h2"><u>Team Powerstats</u></h3>
+              <h3 className="h2">
+                <u>Team Powerstats</u>
+              </h3>
               <div className="d-flex p-3 m-2 team-stats-box">
                 <div className="hero-stats mx-1">
                   <FontAwesomeIcon className="icon" icon={faBrain} />

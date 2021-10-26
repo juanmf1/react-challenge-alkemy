@@ -18,7 +18,7 @@ const Home = () => {
         className="title-container d-flex flex-column align-items-center py-4"
       >
         {token && (
-          <Button className="ms-auto " variant="warning" onClick={handleLogOut}>
+          <Button className="ms-auto mb-4 " variant="warning" onClick={handleLogOut}>
             <FontAwesomeIcon icon={faSignOutAlt} />
             Log-out
           </Button>
