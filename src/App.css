@@ -1,38 +1,259 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+ */
+
+:root {
+  --backgrounds: #262c3a;
+  --backgrounds-2: #586585;
+  --title: rgba(255, 255, 255, 0.856);
+  --subtitle: rgba(218, 218, 218, 0.808);
+  --fonts-card: #a1b4df;
+}
+
+html {
+  background-color: var(--backgrounds-2);
+}
+
+/* Styles App */
+
+.tab-container {
+  background-color: var(--backgrounds);
+}
+
+#uncontrolled-tab-example-tab-team {
+  font-family: "Source Sans Pro", cursive;
+  font-size: 1.5rem;
+  width:10rem;
+  font-weight: bold;
+}
+
+#uncontrolled-tab-example-tab-search {
+  font-family: "Source Sans Pro", cursive;
+  font-size: 1.5rem;
+  width:10rem;
+  font-weight: bold;
+}
+
+/* Styles login */
+
+.login-container{
+  background-color: var(--backgrounds);
+  border-top: 3px solid var(--backgrounds-2);
+  height: 80vh;
+}
+
+.login-form{
+  width:500px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--title);
+  font-size:1.2rem;
+  background-color: var(--backgrounds-2);
+  border-radius:10px;
+  box-shadow: 3px 3px 10px #333;
+}
+
+.submit-login{
+  width:100%;
+  background-color: var(--backgrounds);
+  color: var(--title);
+  font-family: 'Bebas Neue', cursive;
+  font-size:1.5rem;
+  border: 0 none;
+  border-radius: 5px;
+}
+
+.error-login{
+  width: 100%;
+  text-align:center;
+  background-color: rgb(248, 88, 88);
+  font-weight:bold;
+  margin-top:5px;
+  margin-bottom:5px;
+  border-radius: 5px;
+}
+/* Styles home */
+
+.title-container {
+  background-color: var(--backgrounds);
+  color: var(--title);
+}
+
+.page-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-subtitle {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  color: var(--subtitle);
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styles Hero Card */
+
+.card {
+  color: #fff;
+  transition: 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-title {
+  width: 100%;
+  background-color: #586585d5;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.9rem !important;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  font-size: 1.7rem;
+  color: var(--fonts-card);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-icon {
+  margin-left: auto;
+  transition: 0.2s;
+}
+
+.card-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.alignment-card {
+  background-color: #586585d5;
+  width: 25%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom-right-radius: 10px;
+}
+
+.card-image {
+  height: 22rem;
+}
+
+.warning-sign {
+  background-color: #586585d5;
+  color: var(--title);
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.3rem;
+  transition: 1s;
+}
+
+.in-team {
+  background-color: #586585d5;
+  width: max-content;
+  font-weight: bolder;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.hero-stats {
+  text-align: center;
+  font-weight: 800;
+}
+
+.details-button {
+  margin-top: auto;
+}
+
+/* Styles SearchBar */
+
+.search-container {
+  background-color: var(--backgrounds);
+  border-top: 3px solid var(--backgrounds-2);
+}
+
+.results-container {
+  background-image: linear-gradient(
+      rgba(15, 15, 15, 0.911),
+      rgba(0, 0, 0, 0.596)
+    ),
+    url("https://m.media-amazon.com/images/I/91ejhAAeUmL._AC_SY355_.jpg");
+  background-position: center;
+  min-height: 80vh;
+  color: #fff;
+}
+
+/* Styles team */
+
+.team-container {
+  background-image: linear-gradient(
+      rgba(15, 15, 15, 0.794),
+      rgba(0, 0, 0, 0.596)
+    ),
+    url("https://static.thcdn.com/images/large/webp//productimg/1600/1600/12840960-2064831945592667.jpg");
+  background-position: center;
+  min-height: 80vh;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Styles team stats */
+
+.team-stats-container {
+  background-color: var(--backgrounds-2);
+  color: var(--subtitle);
+  border: 5px solid var(--backgrounds);
+}
+.team-stats-col {
+  min-width: max-content;
+}
+
+.team-stats-col h3 {
+  font-weight: bolder;
+}
+
+.team-stats-col div {
+  background-color: var(--backgrounds);
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
+.team-stats-box {
+  box-shadow: 3px 3px 10px #333;
+}
+.team-stats-col div p span {
+  font-weight: bolder;
+}
+
+/* Styles details modal */
+
+.details-modal {
+  color: var(--title);
+}
+
+.details-modal-header {
+  background-color: var(--backgrounds-2);
+}
+
+.details-modal-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5rem !important;
+}
+
+.details-modal-body {
+  font-family: "Bebas Neue", cursive;
+  background-color: var(--backgrounds);
+  font-size: 1.5rem;
+  color: var(--subtitle);
+}
+
+.details-modal-body p span {
+  color: var(--fonts-card);
+}
+
+.details-image {
+  width: 14rem;
+  height: auto;
+  border: 5px solid var(--backgrounds-2);
+}
+
+.details-modal-footer {
+  background-color: var(--backgrounds-2);
 }
