@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-challenge-alkemy/static/css/main.36f06174.chunk.css",
-    "main.js": "/react-challenge-alkemy/static/js/main.b1ef0393.chunk.js",
-    "main.js.map": "/react-challenge-alkemy/static/js/main.b1ef0393.chunk.js.map",
+    "main.css": "/react-challenge-alkemy/static/css/main.877b57b4.chunk.css",
+    "main.js": "/react-challenge-alkemy/static/js/main.139c1f1d.chunk.js",
+    "main.js.map": "/react-challenge-alkemy/static/js/main.139c1f1d.chunk.js.map",
     "runtime-main.js": "/react-challenge-alkemy/static/js/runtime-main.ef4233d5.js",
     "runtime-main.js.map": "/react-challenge-alkemy/static/js/runtime-main.ef4233d5.js.map",
     "static/css/2.c1256375.chunk.css": "/react-challenge-alkemy/static/css/2.c1256375.chunk.css",
-    "static/js/2.024a4683.chunk.js": "/react-challenge-alkemy/static/js/2.024a4683.chunk.js",
-    "static/js/2.024a4683.chunk.js.map": "/react-challenge-alkemy/static/js/2.024a4683.chunk.js.map",
+    "static/js/2.6f513501.chunk.js": "/react-challenge-alkemy/static/js/2.6f513501.chunk.js",
+    "static/js/2.6f513501.chunk.js.map": "/react-challenge-alkemy/static/js/2.6f513501.chunk.js.map",
     "index.html": "/react-challenge-alkemy/index.html",
     "static/css/2.c1256375.chunk.css.map": "/react-challenge-alkemy/static/css/2.c1256375.chunk.css.map",
-    "static/css/main.36f06174.chunk.css.map": "/react-challenge-alkemy/static/css/main.36f06174.chunk.css.map",
-    "static/js/2.024a4683.chunk.js.LICENSE.txt": "/react-challenge-alkemy/static/js/2.024a4683.chunk.js.LICENSE.txt"
+    "static/css/main.877b57b4.chunk.css.map": "/react-challenge-alkemy/static/css/main.877b57b4.chunk.css.map",
+    "static/js/2.6f513501.chunk.js.LICENSE.txt": "/react-challenge-alkemy/static/js/2.6f513501.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ef4233d5.js",
     "static/css/2.c1256375.chunk.css",
-    "static/js/2.024a4683.chunk.js",
-    "static/css/main.36f06174.chunk.css",
-    "static/js/main.b1ef0393.chunk.js"
+    "static/js/2.6f513501.chunk.js",
+    "static/css/main.877b57b4.chunk.css",
+    "static/js/main.139c1f1d.chunk.js"
   ]
 }
