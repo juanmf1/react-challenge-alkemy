@@ -15,6 +15,8 @@ const DetailsModal = ({
 }) => {
 
 
+  // Funcion para sumar a la variable aliases todos los alias con una coma al final,
+  // para luego quitar la coma final de la cadena en el componente
 
   let aliases = "";
 
@@ -45,6 +47,7 @@ const DetailsModal = ({
           <div className="pt-3 pt-sm-0 ps-4">
             <p>
               <span>Alias:</span>
+              {/* Con esto quitamos el ultimo caracter de la cadena, que es la coma */}
               {aliases.slice(0,-1)}
             </p>
             <p>
